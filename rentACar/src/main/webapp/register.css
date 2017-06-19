@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+body {
+  background-color:#fff;
+  background-image: url(http://www.bmw.co.ao/_common/shared/newvehicles/5series/sedan/2010/showroom/efficiency/_img/background.jpg);
+  -webkit-font-smoothing: antialiased;
+  font: normal 14px Roboto,arial,sans-serif;
+  background-size: cover;
+}
+
+.center{
+	text-align:center;
+}
+

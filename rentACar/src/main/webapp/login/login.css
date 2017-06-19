@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400);
+body {
+  background-color:#fff;
+  background-image: url(http://4.bp.blogspot.com/-cAz7NMiOkfk/URMcHqqJxhI/AAAAAAAAB5k/p-YL-vGvgzI/s1600/The-best-top-desktop-hd-dark-black-wallpapers-dark-black-wallpaper-dark-background-dark-wallpaper-25.jpg);
+  -webkit-font-smoothing: antialiased;
+  font: normal 14px Roboto,arial,sans-serif;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  position: fixed;
+}
+
+.container {
+    
+    text-align: center;
+  	
+}
+
+.form-login {
+    background-color: #EDEDED;
+    border-color:#d2d2d2;
+    box-shadow:0 1px 0 #cfcfcf;
+    text-align: center;
+  	width: 100%;
+}
+
+h4 { 
+ border:0 solid #fff; 
+ border-bottom-width:1px;
+ padding-bottom:10px;
+ text-align: center;
+}
+
+.form-control {
+/*     border-radius: 10px; */
+}
+
+.wrapper {
+    text-align: center;
+}
+
+
+

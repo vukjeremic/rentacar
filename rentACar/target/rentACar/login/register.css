@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+body {
+  background-color:#fff;
+  background-image: url(http://4.bp.blogspot.com/-cAz7NMiOkfk/URMcHqqJxhI/AAAAAAAAB5k/p-YL-vGvgzI/s1600/The-best-top-desktop-hd-dark-black-wallpapers-dark-black-wallpaper-dark-background-dark-wallpaper-25.jpg);
+  -webkit-font-smoothing: antialiased;
+  font: normal 14px Roboto,arial,sans-serif;
+  background-size: cover;
+}
+
+.center{
+	text-align:center;
+}
+

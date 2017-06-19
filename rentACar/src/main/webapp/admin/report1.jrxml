@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 4.0.0  -->
+<!-- 2017-06-14T16:30:36 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="rctest"/>
+	<queryString language="SQL">
+		<![CDATA[select * from auto where status=0]]>
+	</queryString>
+	<field name="registracija" class="java.lang.String"/>
+	<field name="marka" class="java.lang.String"/>
+	<field name="model" class="java.lang.String"/>
+	<field name="boja" class="java.lang.String"/>
+	<field name="gorivo" class="java.lang.String"/>
+	<field name="idKat" class="java.lang.Integer"/>
+	<field name="status" class="java.lang.Integer"/>
+	<variable name="marka1" class="java.lang.Integer" resetType="Column" calculation="Count">
+		<variableExpression><![CDATA[$F{marka}]]></variableExpression>
+	</variable>
+	<group name="registracija">
+		<groupExpression><![CDATA[$F{registracija}]]></groupExpression>
+	</group>
+	<group name="marka">
+		<groupExpression><![CDATA[$F{marka}]]></groupExpression>
+	</group>
+	<group name="model">
+		<groupExpression><![CDATA[$F{model}]]></groupExpression>
+	</group>
+	<group name="boja">
+		<groupExpression><![CDATA[$F{boja}]]></groupExpression>
+	</group>
+	<group name="gorivo">
+		<groupExpression><![CDATA[$F{gorivo}]]></groupExpression>
+	</group>
+	<group name="idKat">
+		<groupExpression><![CDATA[$F{idKat}]]></groupExpression>
+	</group>
+	<group name="status">
+		<groupExpression><![CDATA[$F{status}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="72" splitType="Stretch">
+			<staticText>
+				<reportElement x="120" y="20" width="333" height="49"/>
+				<textElement textAlignment="Center" lineSpacing="Single">
+					<font fontName="DejaVu Sans" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Trenutna ponuda automobila]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="55" splitType="Stretch">
+			<staticText>
+				<reportElement x="310" y="0" width="100" height="47"/>
+				<textElement lineSpacing="Single">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Gorivo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="-1" width="100" height="48"/>
+				<textElement lineSpacing="Single">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Model]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="-3" width="100" height="46"/>
+				<textElement lineSpacing="Single">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Marka]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="1" width="100" height="53"/>
+				<textElement lineSpacing="Single">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Boja]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="23" width="560" height="1"/>
+			</line>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="10" y="10" width="100" height="30"/>
+				<textElement lineSpacing="Single"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{marka}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="10" width="100" height="30"/>
+				<textElement lineSpacing="Single"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{model}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="10" width="100" height="30"/>
+				<textElement lineSpacing="Single"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{gorivo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="10" width="100" height="30"/>
+				<textElement lineSpacing="Single"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{boja}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="56" splitType="Stretch"/>
+	</summary>
+</jasperReport>
